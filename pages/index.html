@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Web Development Skills</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <h1 id="title">Web Development Skills</h1>
+        <p id="description">Why Web Development ?</p>
+        <form action="" id="survey-form">
+            <div>
+                <label id="name-label" for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" />
+                <div>
+                    <label id="email-label" for="email">E-mail: </label>
+                    <input
+                        type="email"
+                        id="email"
+                        required
+                        placeholder="Enter your e-mail address"
+                    />
+                </div>
+                <div>
+                    <label id="number-label" for="number">Number: </label>
+                    <input type="number" id="number" min="1" max="10" placeholder="Number" />
+                </div>
+            </div>
+            <div>
+                <select name="dropdown" id="dropdown">
+                    <option value="csharp">C#</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="react">ReactJS</option>
+                    <option value="python">Python</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="radio" name="a" checked />
+                <input type="radio" name="a" />
+                <input type="radio" name="a" />
+                <input type="radio" name="a" />
+            </div>
+
+            <div>
+                <input type="checkbox" id="b" name="b" value=""/>
+                <label for="b">B checkbox: </label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="c" value=""/>
+                <label for="c">B checkbox: </label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="b" value=""/>
+                <label for="b">B checkbox: </label>
+            </div>
+
+            <div>
+                <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
+            </div>
+            <input type="submit" id="submit"/>
+        </form>
+    </body>
+</html>
