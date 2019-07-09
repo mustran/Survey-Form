@@ -10,63 +10,79 @@
     <body>
         <div class="container">
             <h1 id="title">Web Development Skills</h1>
-            <p id="description">Show us what you got</p>
+            <p id="description">Fill the survey below</p>
             <form action="" id="survey-form">
-                <div>
-                    <div id="divide">
-                        <div>
-                            <label id="name-label" for="name">Name: </label>
-                            <input
-                                class="textInput"
-                                type="text"
-                                name="name"
-                                id="name"
-                                placeholder="Enter your name"
-                            />
-                        </div>
-                        <div>
-                            <label id="surname-label" for="surname">Surname: </label>
-                            <input
-                                class="textInput"
-                                type="text"
-                                name="surname"
-                                id="surname"
-                                placeholder="Enter your surname"
-                            />
-                        </div>
-                        <div>
-                            <label id="number-label" for="number">Age: </label>
-                            <input
-                                class="textInput"
-                                type="number"
-                                id="number"
-                                min="1"
-                                max="100"
-                                placeholder="Age"
-                            />
-                        </div>
-                        <div>
-                            <label id="email-label" for="email">E-mail: </label>
-                            <input
-                                class="textInput"
-                                type="email"
-                                id="email"
-                                required
-                                placeholder="Enter your e-mail address"
-                            />
-                        </div>
-                        <div>
-                            <label for="selfVSschool">Method of learning: </label>
-                            <select name="dropdown" id="selfVSschool">
-                                <option value="select" disabled selected>Select an option</option>
-                                <option value="self-taught">Self-taught</option>
-                                <option value="college">College</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                   
+                <div id="divide">
                     <div>
-                        <p style="display: inline">Favorite language/framwowk:</p>
+                        <label id="name-label" for="name">Name: </label>
+                        <input
+                            class="textInput"
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Enter your name"
+                        />
+                    </div>
+                    <div>
+                        <label id="surname-label" for="surname">Surname: </label>
+                        <input
+                            class="textInput"
+                            type="text"
+                            name="surname"
+                            id="surname"
+                            placeholder="Enter your surname"
+                        />
+                    </div>
+                    <div>
+                        <label id="number-label" for="number">Age: </label>
+                        <input
+                            class="textInput"
+                            type="number"
+                            id="number"
+                            min="1"
+                            max="100"
+                            placeholder="Age"
+                        />
+                    </div>
+                    <div>
+                        <label id="email-label" for="email">E-mail: </label>
+                        <input
+                            class="textInput"
+                            type="email"
+                            id="email"
+                            required
+                            placeholder="Enter your e-mail address"
+                        />
+                    </div>
+                    <div>
+                        <label for="selfVSschool">Method of learning: </label>
+                        <select name="dropdown" id="selfVSschool">
+                            <option value="select" disabled selected>Select an option</option>
+                            <option value="self-taught">Self-taught</option>
+                            <option value="college">College</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div id="front-back">
+                        <label>What are you more interested in? </label>
+                        <div id="dFlex">
+                            <label>
+                                <input type="radio" name="Front-End" checked />
+                                "Front-end"
+                            </label>
+                            <label>
+                                <input type="radio" name="Front-End" checked />
+                                "Back-end"
+                            </label>
+                            <label>
+                                <input type="radio" name="Front-End" checked />
+                                "Full-stack"
+                            </label>
+                        </div>
+                    </div>
+                    <div id="fav">
+                        <label>Favorite language/framwowk:</label>
                         <select name="dropdown" id="dropdown">
                             <option selected value="selectAnOption" disabled
                                 >Select an option</option
@@ -78,35 +94,60 @@
                             <option value="python">Python</option>
                         </select>
                     </div>
-                </div>
-                    <div>
-                        <input type="radio" name="a" checked />
-                        <input type="radio" name="a" />
-                        <input type="radio" name="a" />
-                        <input type="radio" name="a" />
-                        <input type="radio" name="a" />
-                    </div>
-                    
-                    <div>
-                        <input type="checkbox" id="b" name="b" value="" />
-                        <label for="b">B checkbox: </label>
-                    </div>
 
-                    <div>
-                        <input type="checkbox" name="c" value="" />
-                        <label for="c">B checkbox: </label>
-                    </div>
+                    <div id="techSection">
+                        <label id="techUsed" for="">Technologies used: </label>
+                        <div id="checkboxes">
+                            <div>
+                                <input type="checkbox" id="java" name="java" value="java" />
+                                <label for="java">Java </label>
+                            </div>
 
-                    <div>
-                        <input type="checkbox" name="b" value="" />
-                        <label for="b">B checkbox: </label>
+                            <div>
+                                <input type="checkbox" id="javascript" name="javascript" value="javascript" />
+                                <label for="javascript">JavaScript </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="csharp" name="csharp" value="csharp" />
+                                <label for="csharp">C# </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="kotlin" name="kotlin" value="kotlin" />
+                                <label for="kotlin">Kotlin </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="C" name="C" value="C" />
+                                <label for="C">C</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="react" name="react" value="react" />
+                                <label for="react">React </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="python" name="python" value="python" />
+                                <label for="python">Python </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="vue" name="vue" value="vue" />
+                                <label for="vue">Vue </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="TypeScript" name="typescript" value="typescript" />
+                                <label for="TypeScript">TypeScript </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="sql" name="sql" value="sql" />
+                                <label for="sql">SQL </label>
+                            </div>
+                        </div>
                     </div>
-                
-                <div>
-                    <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
+                    <div id="commentSection">
+                        <label for="">Short comment about yourself: </label>
+                        <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
+                    </div>
                 </div>
-                <input type="submit" value="Submit" />
             </form>
+            <input id="submitButton" type="submit" value="Submit" />
         </div>
     </body>
 </html>

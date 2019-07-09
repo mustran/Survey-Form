@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    /* height: 100%; */
 }
 
 *,
@@ -9,22 +10,24 @@ html {
 }
 
 body {
-    
     height: 100%;
-    /* color: white; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px;
+    margin-top: 20px;
     display: grid;
     place-items: center;
-    /* background-color: antiquewhite; */
     background: linear-gradient(110deg, #5b71ee, #48cf43);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 .container {
+    margin-top: 30px;
     padding: 30px;
     display: grid;
     background-color: aliceblue;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 #title {
@@ -42,7 +45,7 @@ body {
 
 .textInput {
     height: 30px;
-    width: 280px;
+    width: 100%;
     padding: 5px;
     margin: 10px;
     border: 1px solid #c0c0c0;
@@ -50,9 +53,9 @@ body {
     transition: 0.2s;
 }
 
-.textInput:focus {
+.textInput:focus , select:focus{
     height: 38px;
-    width: 280px;
+    /* width: 280px; */
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 4px;
 }
@@ -66,57 +69,124 @@ select {
     transition: 0.2s;
 }
 
-select:focus {
-    height: 38px;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-}
-
-#divide{
-  display: grid;
-  
+#divide {
+    display: grid;
 }
 
 #divide > * {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 170px 1fr;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 170px 1fr;
 }
 
-label{
-  font-size: 1.3em;
+label {
+    font-size: 1.3em;
 }
 
-@media (max-width: 883px){
+#dFlex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+label {
+    margin-bottom: 10px;
+    /* margin-top: 5px; */
+}
+
+#front-back {
+    margin-bottom: 5px;
+}
+
+#fav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+#checkboxes, #commentSection{
+    margin-left: 10px;
+    margin-top: 10px
+}
+
+#techUsed{
+    align-self: start;
+    margin-top: 15px;
+}
+
+#submitButton{
+    border: 1px solid #2049b9;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: #6187f0;
+    cursor: pointer;
+    width: 100px;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+#submitButton:hover{
+    /* border: 1px solid white; */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6187f0;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 883px) {
     #divide > * {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    body{
+    body {
         height: 100%;
     }
 
-    label{
+    label {
         margin-left: 13px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    #dFlex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #commentSection{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    #techSection > label{
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 }
 
-@media (max-width: 480px){
-    .container{
+@media (max-width: 480px) {
+    .container {
         border-radius: 7px;
         margin: 20px;
         padding: 15px;
+        margin-bottom: 20px;
     }
 
-    body{
-        height: 100%;
-    }
-
-    #title{
+    #title {
         font-size: 20px;
         text-align: center;
     }
 
-    
+    body {
+        height: 100%;
+    }
+
+    .textInput{
+        width: auto;
+        margin-top: 2px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 }
