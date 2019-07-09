@@ -14,7 +14,7 @@
             <form action="" id="survey-form">
                 <div id="divide">
                     <div>
-                        <label id="name-label" for="name">Name: </label>
+                        <label id="name-label" for="name">* Name: </label>
                         <input
                             class="textInput"
                             type="text"
@@ -25,17 +25,18 @@
                         />
                     </div>
                     <div>
-                        <label id="surname-label" for="surname">Surname: </label>
+                        <label id="surname-label" for="surname">* Surname: </label>
                         <input
                             class="textInput"
                             type="text"
                             name="surname"
                             id="surname"
                             placeholder="Enter your surname"
+                            required
                         />
                     </div>
                     <div>
-                        <label id="number-label" for="number">Age: </label>
+                        <label id="number-label" for="number">* Age: </label>
                         <input
                             class="textInput"
                             type="number"
@@ -43,10 +44,11 @@
                             min="1"
                             max="100"
                             placeholder="Age"
+                            required
                         />
                     </div>
                     <div>
-                        <label id="email-label" for="email">E-mail: </label>
+                        <label id="email-label" for="email">* E-mail: </label>
                         <input
                             class="textInput"
                             type="email"
@@ -93,6 +95,7 @@
                             <option value="java">Java</option>
                             <option value="react">React-JS</option>
                             <option value="python">Python</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
 
@@ -146,8 +149,8 @@
                         <label for="">Short comment about yourself: </label>
                         <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
                     </div>
+                    <input id="submit" type="submit" value="Submit" />
                 </div>
-                <input id="submit" type="submit" value="Submit" />
             </form>
         </div>
     </body>
