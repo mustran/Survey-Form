@@ -5,66 +5,108 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Web Development Skills</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
-        <h1 id="title">Web Development Skills</h1>
-        <p id="description">Why Web Development ?</p>
-        <form action="" id="survey-form">
-            <div>
-                <label id="name-label" for="name">Name: </label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" />
+        <div class="container">
+            <h1 id="title">Web Development Skills</h1>
+            <p id="description">Show us what you got</p>
+            <form action="" id="survey-form">
                 <div>
-                    <label id="email-label" for="email">E-mail: </label>
-                    <input
-                        type="email"
-                        id="email"
-                        required
-                        placeholder="Enter your e-mail address"
-                    />
+                    <div id="divide">
+                        <div>
+                            <label id="name-label" for="name">Name: </label>
+                            <input
+                                class="textInput"
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="Enter your name"
+                            />
+                        </div>
+                        <div>
+                            <label id="surname-label" for="surname">Surname: </label>
+                            <input
+                                class="textInput"
+                                type="text"
+                                name="surname"
+                                id="surname"
+                                placeholder="Enter your surname"
+                            />
+                        </div>
+                        <div>
+                            <label id="number-label" for="number">Age: </label>
+                            <input
+                                class="textInput"
+                                type="number"
+                                id="number"
+                                min="1"
+                                max="100"
+                                placeholder="Age"
+                            />
+                        </div>
+                        <div>
+                            <label id="email-label" for="email">E-mail: </label>
+                            <input
+                                class="textInput"
+                                type="email"
+                                id="email"
+                                required
+                                placeholder="Enter your e-mail address"
+                            />
+                        </div>
+                        <div>
+                            <label for="selfVSschool">Method of learning: </label>
+                            <select name="dropdown" id="selfVSschool">
+                                <option value="select" disabled selected>Select an option</option>
+                                <option value="self-taught">Self-taught</option>
+                                <option value="college">College</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                   
+                    <div>
+                        <p style="display: inline">Favorite language/framwowk:</p>
+                        <select name="dropdown" id="dropdown">
+                            <option selected value="selectAnOption" disabled
+                                >Select an option</option
+                            >
+                            <option value="csharp">C#</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="java">Java</option>
+                            <option value="react">React-JS</option>
+                            <option value="python">Python</option>
+                        </select>
+                    </div>
                 </div>
+                    <div>
+                        <input type="radio" name="a" checked />
+                        <input type="radio" name="a" />
+                        <input type="radio" name="a" />
+                        <input type="radio" name="a" />
+                        <input type="radio" name="a" />
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="b" name="b" value="" />
+                        <label for="b">B checkbox: </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="c" value="" />
+                        <label for="c">B checkbox: </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="b" value="" />
+                        <label for="b">B checkbox: </label>
+                    </div>
+                
                 <div>
-                    <label id="number-label" for="number">Number: </label>
-                    <input type="number" id="number" min="1" max="10" placeholder="Number" />
+                    <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
                 </div>
-            </div>
-            <div>
-                <select name="dropdown" id="dropdown">
-                    <option value="csharp">C#</option>
-                    <option value="javascript">JavaScript</option>
-                    <option value="java">Java</option>
-                    <option value="react">React-JS</option>
-                    <option value="python">Python</option>
-                </select>
-            </div>
-
-            <div>
-                <input type="radio" name="a" checked />
-                <input type="radio" name="a" />
-                <input type="radio" name="a" />
-                <input type="radio" name="a" />
-                <input type="radio" name="a" />
-            </div>
-
-            <div>
-                <input type="checkbox" id="b" name="b" value=""/>
-                <label for="b">B checkbox: </label>
-            </div>
-
-            <div>
-                <input type="checkbox" name="c" value=""/>
-                <label for="c">B checkbox: </label>
-            </div>
-
-            <div>
-                <input type="checkbox" name="b" value=""/>
-                <label for="b">B checkbox: </label>
-            </div>
-
-            <div>
-                <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
-            </div>
-            <input type="submit" id="submit"/>
-        </form>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
     </body>
 </html>

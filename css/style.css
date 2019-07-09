@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    /* color: white; */
+    /* font-family: "Courier New", Courier, monospace; */
+    margin: 0px;
+    display: grid;
+    place-items: center;
+    /* background-color: antiquewhite; */
+    background: linear-gradient(110deg, #5b71ee, #48cf43);
+}
+
+.container {
+    padding: 30px;
+    display: grid;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+#title {
+    color: #6187f0;
+    text-transform: uppercase;
+}
+
+#description {
+    display: grid;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #6187f0;
+    font-weight: 700;
+}
+
+.textInput {
+    height: 30px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+
+.textInput:focus {
+    height: 38px;
+    width: 280px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+select {
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+
+select:focus {
+    height: 38px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+#divide{
+  display: grid;
+  
+}
+
+#divide > * {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 150px 1fr;
+}
+
+label{
+  font-size: 1.3em;
+}
