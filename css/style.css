@@ -9,10 +9,11 @@ html {
 }
 
 body {
-    height: 100vh;
+    
+    height: 100%;
     /* color: white; */
-    /* font-family: "Courier New", Courier, monospace; */
-    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
     display: grid;
     place-items: center;
     /* background-color: antiquewhite; */
@@ -79,9 +80,43 @@ select:focus {
 #divide > * {
   display: grid;
   align-items: center;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 170px 1fr;
 }
 
 label{
   font-size: 1.3em;
+}
+
+@media (max-width: 883px){
+    #divide > * {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    body{
+        height: 100%;
+    }
+
+    label{
+        margin-left: 13px;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        border-radius: 7px;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    body{
+        height: 100%;
+    }
+
+    #title{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
 }
