@@ -21,6 +21,7 @@
                             name="name"
                             id="name"
                             placeholder="Enter your name"
+                            required
                         />
                     </div>
                     <div>
@@ -68,15 +69,15 @@
                         <label>What are you more interested in? </label>
                         <div id="dFlex">
                             <label>
-                                <input type="radio" name="Front-End" checked />
+                                <input type="radio" name="Front-End" value="1"/>
                                 "Front-end"
                             </label>
                             <label>
-                                <input type="radio" name="Front-End" checked />
+                                <input type="radio" name="Front-End" value="2"/>
                                 "Back-end"
                             </label>
                             <label>
-                                <input type="radio" name="Front-End" checked />
+                                <input type="radio" name="Front-End" value="3"/>
                                 "Full-stack"
                             </label>
                         </div>
@@ -99,44 +100,44 @@
                         <label id="techUsed" for="">Technologies used: </label>
                         <div id="checkboxes">
                             <div>
-                                <input type="checkbox" id="java" name="java" value="java" />
+                                <input type="checkbox" id="java" name="languages" value="java" />
                                 <label for="java">Java </label>
                             </div>
 
                             <div>
-                                <input type="checkbox" id="javascript" name="javascript" value="javascript" />
+                                <input type="checkbox" id="javascript" name="languages" value="javascript" />
                                 <label for="javascript">JavaScript </label>
                             </div>
                             <div>
-                                <input type="checkbox" id="csharp" name="csharp" value="csharp" />
+                                <input type="checkbox" id="csharp" name="languages" value="csharp" />
                                 <label for="csharp">C# </label>
                             </div>
                             <div>
-                                <input type="checkbox" id="kotlin" name="kotlin" value="kotlin" />
+                                <input type="checkbox" id="kotlin" name="languages" value="kotlin" />
                                 <label for="kotlin">Kotlin </label>
                             </div>
                             <div>
-                                <input type="checkbox" id="C" name="C" value="C" />
+                                <input type="checkbox" id="C" name="languages" value="C" />
                                 <label for="C">C</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="react" name="react" value="react" />
+                                <input type="checkbox" id="react" name="languages" value="react" />
                                 <label for="react">React </label>
                             </div>
                             <div>
-                                <input type="checkbox" id="python" name="python" value="python" />
+                                <input type="checkbox" id="python" name="languages" value="python" />
                                 <label for="python">Python </label>
                             </div>
                             <div>
-                                <input type="checkbox" id="vue" name="vue" value="vue" />
+                                <input type="checkbox" id="vue" name="languages" value="vue" />
                                 <label for="vue">Vue </label>
                             </div>
                             <div>
-                                <input type="checkbox" id="TypeScript" name="typescript" value="typescript" />
+                                <input type="checkbox" id="TypeScript" name="languages" value="typescript" />
                                 <label for="TypeScript">TypeScript </label>
                             </div>
                             <div>
-                                <input type="checkbox" id="sql" name="sql" value="sql" />
+                                <input type="checkbox" id="sql" name="languages" value="sql" />
                                 <label for="sql">SQL </label>
                             </div>
                         </div>
@@ -146,8 +147,10 @@
                         <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
                     </div>
                 </div>
+                <input id="submit" type="submit" value="Submit" />
             </form>
-            <input id="submitButton" type="submit" value="Submit" />
         </div>
     </body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
 </html>

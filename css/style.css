@@ -113,7 +113,7 @@ label {
     margin-top: 15px;
 }
 
-#submitButton{
+#submit{
     border: 1px solid #2049b9;
     padding: 10px;
     border-radius: 5px;
@@ -125,7 +125,7 @@ label {
     margin-top: 20px;
 }
 
-#submitButton:hover{
+#submit:hover{
     /* border: 1px solid white; */
     padding: 10px;
     border-radius: 5px;
